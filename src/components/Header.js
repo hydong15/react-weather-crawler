@@ -3,7 +3,9 @@ import logo from '../logo.svg';
 
 //Stateless component, dumb component
 const Header = ({name, foo}) => {
-
+    console.log(name);
+    console.log(foo);
+    
     return (
         <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
