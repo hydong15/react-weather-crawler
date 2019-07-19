@@ -1,16 +1,16 @@
 import React from 'react';
-import logo from '../logo.svg';
+import logo from './logo.svg';
 
 //Stateless component, dumb component
-const Header = ({name, foo}) => {
-    console.log(name);
-    console.log(foo);
-    
+const Header = ({name, city}) => {
+    console.log(city);
+        
     return (
         <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
+            <div>CITY : {city}</div>
             <div>My name is {name}.</div>
-            <p>
+            {/* <p>
                 Edit <code>src/App.js</code> and save to reload.
             </p>
             <a
@@ -20,7 +20,7 @@ const Header = ({name, foo}) => {
                 rel="noopener noreferrer"
             >
                 Learn React
-            </a>
+            </a> */}
         </header>
     );
 }

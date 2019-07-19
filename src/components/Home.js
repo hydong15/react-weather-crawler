@@ -1,16 +1,15 @@
-import React from 'react';
-import Cities from './Cities';
+import React, {Component} from 'react';
 
-class Home extends React.Component {
+//Stateless component
+class Home extends Component {
     render() {
         return (
-            <>
-                <div>Home!!</div>
-
-                <Cities />
-            </>
-        )
+            <div>
+                <h1>Home</h1>
+                <p>Here is front page!</p>
+            </div>
+        );
     }
-}    
+}
 
 export default Home;

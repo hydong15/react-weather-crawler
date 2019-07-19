@@ -11,12 +11,14 @@ class Cities extends Component {
 
         fetch(API)
             .then(data => data.json())
-            //.then(result => console.log(result));\
+            //.then(result => console.log(result));
             .then(result => {
                 this.setState({
                     cities: result
-                })
+                });
             });
+        //Can't use data as sync
+        console.warn('FETCHED CITIES');
     }
 
     render() {
