@@ -1,12 +1,15 @@
 import React, {Component} from 'react';
+import './home.css';
 
 //Stateless component
 class Home extends Component {
     render() {
         return (
-            <div>
+            <div className="home">
                 <h1>Home</h1>
-                <p>Here is front page!</p>
+                <div className="home-content">
+                    <p>Today's weather is ...</p>
+                </div>
             </div>
         );
     }

@@ -39,14 +39,16 @@ class TodayWeather extends Component {
 
         return (
             <div className="weather-today">
-                <h2 className="weather-city">{cityId}</h2>
-                <div className="weather-today-meta">
-                    <h3 className="weather-main">{weatherMain}</h3>
-                    <div className="weather-temp">{celsius}°</div>
-                </div>
-                <div className="weather-image">
-                    <Icon iconId={iconId} />
-                </div>
+                <h2 className="weather-today-city">{cityId}</h2>
+                    <div className="weather-today-content">
+                        <div className="weather-today-meta">
+                            <h3 className="weather-main">{weatherMain}</h3>
+                            <div className="weather-temp">{celsius}°</div>
+                        </div>
+                        <div className="weather-image">
+                            <Icon iconId={iconId} />
+                        </div>
+                    </div>
             </div>
         );
     }
