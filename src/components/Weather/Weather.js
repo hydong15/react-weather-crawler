@@ -36,9 +36,7 @@ class Weather extends Component {
         console.log(cities);
 
         return(
-            <div>
-                <h1>Weather</h1>
-                
+            <div className="weather">
                 <Switch>
                     <Route path={`${match.path}/:cityId`} component={TodayWeather} />
                     <Route exact path={match.path} render={() => <List cities={cities} />} />
