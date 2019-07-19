@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 
+import Icon from './Icon';
+
 const API_WEATHER = 'http://api.openweathermap.org/data/2.5/weather?q=';
 const APP_ID = '&appid=ed47fd9ca2f0ce282cf330ecfd9fa587';
 //http://api.openweathermap.org/data/2.5/weather?q={cityName}&appid=ed47fd9ca2f0ce282cf330ecfd9fa587
@@ -15,7 +17,7 @@ class TodayWeather extends Component {
 
         const weather = await fetch(api)
             .then(res => res.json())
-            .then(data => data);
+            .then(data => data.weather[0]);
         
         this.setState({
             weather
@@ -26,10 +28,18 @@ class TodayWeather extends Component {
         const {cityId} = this.props.match.params;
         const {weather} = this.state;
 
+        if (!weather) {
+            return <div>Loading...</div>
+        }
+
         return (
             <>
                 <h2>{cityId}</h2>
-                {weather && <div>{JSON.stringify(weather)}</div>}
+                <div>{JSON.stringify(weather)}</div>
+
+                <div className="weather-image">
+                        <Icon iconId={weather.icon} />
+                </div>
             </>
         );
     }

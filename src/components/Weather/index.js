@@ -20,7 +20,7 @@ class Weather extends Component {
             .then(result => result);
 
         //Can use data as sync
-        console.warn('FETCHED CITIES', cities);
+        //console.warn('FETCHED CITIES', cities);
 
         this.setState({
             cities
