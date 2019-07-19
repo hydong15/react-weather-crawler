@@ -7,7 +7,7 @@ import About from './components/About';
 import Cities from './components/Cities/';
 
 const RouterApp = () => {
-    const city = 'Daejeon';
+    const city = 'Your location';
 
     return (
         <div>
