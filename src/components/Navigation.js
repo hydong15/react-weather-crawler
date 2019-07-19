@@ -16,8 +16,8 @@ class Navigation extends Component {
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/cities" activeClassName="selected">
-                        Cities
+                    <NavLink to="/weather" activeClassName="selected">
+                        Weather
                     </NavLink>
                 </li>
             </ul>
