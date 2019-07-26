@@ -11,7 +11,6 @@ class TodayWeather extends Component {
   
   async componentDidMount() {
     const {match} = this.props;
-    // console.log(match.params);
     
     const cityId = match.params.cityId;
     const API_WEATHER = `http://api.openweathermap.org/data/2.5/weather?q=${cityId}&appid=${APP_ID}`

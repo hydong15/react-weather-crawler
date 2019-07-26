@@ -7,13 +7,13 @@
 
 .weather-list {
   flex: 1 auto;
-  margin-top: 3em;
-  margin-left: 3em;
+  padding: 1rem;
 }
 .weather-cities {
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-position: outside;
+  list-style-type: decimal-leading-zero;
 }
 
 .weather-cities li {

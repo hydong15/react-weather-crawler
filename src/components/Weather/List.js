@@ -8,7 +8,7 @@ const List = ({cities, match}) => {
   
   return (
     <div className="weather-list">
-      <p>Choose your city:</p>
+      <h2>Choose your city:</h2>
       <ul className="weather-cities">
         {cities.map(item => (
           <li key={item}>
