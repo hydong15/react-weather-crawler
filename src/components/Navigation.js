@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import {Link, NavLink} from 'react-router-dom';
+import Clock from 'react-live-clock';
+
 import './navigation.css';
 
 //Stateless component
@@ -21,6 +23,9 @@ class Navigation extends Component {
           <NavLink to="/weather" activeClassName="selected">
             Weather
           </NavLink>
+        </li>
+        <li>
+          <Clock format={'YYYY년 MM월 DD일 HH:mm:ss'} ticking={true} />
         </li>
       </ul>
     );
