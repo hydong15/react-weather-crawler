@@ -35,8 +35,8 @@ class TodayWeather extends Component {
     }
     
     const celsius = (weather.main.temp - 273.15).toFixed(2);    //kelvin to celsius
-    const weatherMain = weather.weather[0].main;
-    const iconId = weather.weather[0].id;
+    const weatherMain = weather.weather[0].description;
+    const iconId = weather.weather[0].icon;
     
     return (
       <div className="weather-today">
